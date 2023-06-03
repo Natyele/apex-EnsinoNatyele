@@ -1,0 +1,18 @@
+Exercícios
+a) Com base neste capítulo, descreva o que é HTML e o que é JavaScript.
+R: é uma linguagem de marcação, onde sua função é dispor elementos no
+navegador. Quando estamos em algum site há elementos como: imagens,
+formulários, textos, tabelas, vídeos, mapas entre outros.
+
+b) É correto afirmar que JavaScript é uma linguagem de programação?
+Justifique sua resposta.
+R: sim, podemos considerar o JavaScript uma linguagem de programação, 
+o JavaScript consegue fazer muitas coisas que
+uma linguagem de programação como o Java, C# ou PHP podem fazer, mas há
+restrições como por exemplo realizar conexões com banco de dados.
+
+
+c) Os conceitos de lógica serão desenvolvidos utilizando a linguagem HTML,
+pois ela tem suporte a funcionalidades como condicionais e laços de
+repetição. Essa afirmação está correta? Justifique sua resposta
+R:  não, pois não é uma linguagem de programação
