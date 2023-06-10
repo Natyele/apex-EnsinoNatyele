@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ //a)
+var temperatura = prompt("Digite o tipo de conversão(Celcius)")
+var valorTemperatura = 10
+
+switch(temperatura){
+    case "Celsius":
+    document.write(temperatura * 1,8 + 32)
+    break
+
+    case "Fahrenheit":
+        document.write((temperatura - 32) * 1,8)
+        break
+    
+}
+
+//b)
+var moedas = prompt("Digite a conversão das moedas(Real, Dolar, Euro, EuroReal)")
+var valor = 20 
+    
+    switch (moedas) {
+        case "Real":
+            document.write(valor / 5)
+            break;
+            case "Dólar":
+                document.write(valor * 5)
+          
+                case "Euro":
+                document.write(valor * 5,2)
+                case "EuroReal":
+                document.write(valor / 5,2)
+
+    
+        default:
+            break;
+    }
+
+    //c)
+    var nomeProduto = "Iphone"
+    var valorProduto = 8000
+    var segmento = "eletronico" 
+
+    switch (segmento) {
+        case "vestuário":
+            var desconto = valorProduto * 0.5
+            document.write(valorProduto - desconto)
+            break;
+            case "eletronico":
+                var desconto = valorProduto * 0.8
+                document.write(valorProduto - desconto)
+            
+                case "alimenticio":
+                var desconto = valorProduto * 0.10
+                document.write(valorProduto - desconto)
+                
+
+    
+        default:
+            break;
+    }
+
+    //d)
+    var candidato = prompt("Digite o nome do candidato")
+    var votosJose = 0
+    var votosPedro = 0
+    var votosMaria = 0
+
+    switch (candidato) {
+        case "Jose":
+            votosJose = votosJose + 1
+            document.write("Voto contabilizado")
+            break;
+            case "Pedro":
+                votosPedro += votosPedro
+                document.write("Voto contabilizado")
+
+          
+                case "Maria":
+                    votosMaria++ 
+                document.write("Voto contabilizado")
+    
+        default:
+            break;
+    }
+    document.write("Votos Jose " + votosJose)
+    document.write("Votos Pedro " + votosPedro)
+    document.write("Votos Maria " + votosMaria)
+
+// e)
+
+var horarioEUA = 08
+var  horarioAtualBrasil = prompt("Digite a hora no Brasil")
+var horarioEuropa = 21
+var horarioCanada = 14
+var horarioEUA = 08
+var pais = prompt("Digite o País(Europa, Canada, EUA)")
+ 
+
+switch (pais) {
+        case "Europa":
+            document.write(horarioAtualBrasil - 5)
+            break;
+            case "Canada":
+                document.write(horarioAtualBrasil - 2)
+          
+                case "EUA":
+                document.write(horarioAtualBrasil - 1)
+    
+        default:
+            break;
+    }
+
+
+    </script>
+</body>
+</html>
