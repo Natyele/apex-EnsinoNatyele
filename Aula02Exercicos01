@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
 
+        //a)
+var nota1 = 8
+var nota2 = 6
+var media = 7
+
+if(nota1 >= media || nota2 <= media){
+    document.writeln("Aprovado <br>") 
+}else{
+    document.write("Reprovado")
+}
+
+//b)
+var valor1 = 22
+var valor2 = 20
+
+if(valor1 == valor2 ){
+    document.write(valor1 + valor2)
+}else{
+    document.write(valor1 * valor2)
+}
+
+//c)
+var produtos = new Array("Pizza, Pão de Queijo, Cenoura, Macarrão")
+
+var codigoProduto = 1
+var valorPagar = 20
+
+if(codigoProduto == 1 && valorPagar >= 12){
+    document.write(valorPagar - 12)
+}else if(codigoProduto == 2 && valorPagar >= 4){
+    document.write(valorPagar - 4)
+}else if(codigoProduto == 4 && valorPagar >= 5){
+    document.write(valorPagar - 5)
+}else if(codigoProduto == 3 && valorPagar >= 16){
+    document.write(valorPagar = 16)
+}
+
+//d)
+var numero1 = 4
+var numero2 = 9
+var numero3 = 3
+
+if(numero1 < numero2 && numero1 < numero3){
+    document.write(numero1)
+    }else if(numero2 < numero1 && numero2 < numero3){
+        document.write(numero2)
+    }else if(numero3 < numero1 && numero3 < numero2){
+        document.write(numero3)
+    }
+
+
+//e)
+var tipo = new Array("Isosceles, Escaleno, Equilátero")
+
+var direito = 2
+var inferior = 2
+var esquerdo = 2
+
+if(direito == inferior && inferior != esquerdo || inferior == esquerdo &&  esquerdo != direito || direito == esquerdo && esquerdo != inferior){
+    document.write("Isósceles Dois lados iguais e um diferente")
+}else if(direito == inferior && direito == esquerdo && inferior == esquerdo){
+    document.write("Equilátero Três lados iguais")
+} else{
+        document.write("Escaleno Três lados diferentes")
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
