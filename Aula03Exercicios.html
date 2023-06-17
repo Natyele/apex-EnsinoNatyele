@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+ //a)  O usuário irá informar um número, em seguida realizar a tabuada daquele número
+
+
+  let numero = parseInt(prompt("Digite um número:"));
+ document.write('Tabuada do : ' + numero);
+
+ for (let i = 1; i <= 10; i++) {
+  let resultado = numero * i;
+  document.write(numero + ' x ' + i + ' = ' + resultado);
+}
+
+ //b)O usuário informa um número inicial e um número final, em seguida retorne a quantidade de pares e ímpares daquela cadeia de valores.
+  /*  Vamos supor que os números informados foram: 6 e 12, sendo assim serão 4
+   pares (6, 8, 10 e 12) e 3 ímpares (7, 9 e 11). 
+ */
+
+    var numeroInicial = 6
+    var numeroFinal = 12
+
+    var quantidadePares = 0
+    var quantidadeImpares = 0
+
+    for (var i = numeroInicial; i <= numeroFinal; i++) {
+        if ((i % 2) == 0){
+            quantidadePares++
+        } else {
+            quantidadeImpares++
+        }
+    }
+    document.writeln("pares: "+quantidadePares)
+    document.writeln("impares: "+quantidadeImpares)
+    
+
+
+
+  //c)Crie um pequeno sistema de votação, exiba em um prompt() as opções:
+  /* 1 - Alessandra
+  2 - Caio
+  3 - Geraldo
+  4 - Talita
+  5 - Sair
+  Enquanto não for digitado o número 5 o laço deverá realizar a ação de
+  prompt() para pedir o voto e contabilizar para o candidato. Quando
+  informado o número 5 retorne a quantidade de votos que cada candidato
+  obteve */
+
+
+
+
+
+ var Alessandra = 0
+ var Caio = 0
+ var Geraldo = 0
+ var Talita = 0 
+
+
+ do{
+
+    let numeroDigitado = parseInt(prompt("5"));
+    if(1 == numeroDigitado) {
+        Alessandra++
+    } else if(2 == numeroDigitado){
+        Caio++
+    } else if(3 == numeroDigitado){
+        Geraldo++
+    } else if(4 == numeroDigitado){
+        Talita++
+    }
+} while (numeroDigitado != 5)
+    
+ document.write("numeroDigitado 1  : " + Alessandra);
+ document.write("numeroDigitado 2  : " + Caio);
+ document.write("numeroDigitado 3  : " + Geraldo);
+ document.write("numeroDigitado 4  : " + Talita);
+
+ //d)
+ 
+
+ let i = 5
+
+ for (let indice = 5; indice >= 1; indice--) {
+  for (let indice = indice; indice >= 1; indice--) {
+    document.writeln(indice);
+  }
+  document.write("<br>")
+ }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
