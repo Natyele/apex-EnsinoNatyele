@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+ //a) Crie um vetor contendo cinco cidades, em seguida exiba seus valores.
+
+ var cidades = ["Blumenau", "Floripa", "Indaial", "Joinvile", "Pomerode"]
+
+ for(var indice=0; indice<cidades.length; indice++ ){
+    document.writeln(indice+" "+cidades[indice]+"<br>")
+ }
+
+
+ //b)Desenvolva um sistema que o usuário informa cinco números através do comando
+/*  prompt, em seguida exiba os valores informados e mostre a soma desses valores */
+
+
+let numeros = []
+let soma = 0
+
+ for (let index = 0; index <5; index++) {
+    let numero = Number(prompt("Digite o numero:"));
+
+    let numeros = new Array
+    numeros.push(numero)
+
+    document.writeln("Os números informados foram:" +numeros[index]+"<br>");
+    let soma 
+    soma += numeros[index]
+    
+}
+document.write("A soma dos valores informados é:"+ soma);
+
+
+//c)Crie um laço que peça nomes, poderão ser armazenados vários nomes, não há uma
+/* quantidade mínima nem máxima. Quando informada a palavra sair, exiba todos os
+nomes e informe a quantidade de nomes cadastrados. */
+
+
+let nomes = []
+let contadorDeNomes = 0
+let nome
+
+do{
+    let nome = prompt("Informe um nome ou digite sair")
+    nomes.push(nome)
+    contadorDeNomes++
+} while (nome != "sair")
+
+for (let index = 0; index< nomes.length; index++){
+    document.write(nomes[index])
+}
+document.writeln(vontadorDeNomes)
+ 
+
+//d)O usuário informa cinco números, em seguida exiba em ordem contrária que foram
+/* informados. */
+
+ let numeros = []
+ for (let index = 0; index < 5; index++){
+    let numero = parseInt(prompt("Digite um número:"))
+    numeros.push(numero)
+
+    document.write("Numeros informados: " + numeros[index])
+ }
+
+ let numerosInversos
+ for (let index = numeros.length - 1; index >= 0; index --){
+    document.writeln(numeros[index])
+ }
+
+    </script>
+    
+</body>
+</html>
