@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //a) ) Crie uma matriz 3x3, onde a primeira coluna terá o nome de um produto, a segunda
+     /* coluna a marca e a terceira o valor. Esses dados não precisam ser informados pelo
+     usuário, essas informações podem ser pré-definidas como no exemplo de contatos,
+     assim que desenvolver a matriz, exiba os dados utilizando laços de repetição. */
+
+
+     var dados = [
+        ["Shampoo", "Monange", 12],
+        ["Celular", "Apple", 9.000],
+        ["Roupas", "Hering", 39]
+     ]
+
+     for(var linha = 0; linha<dados.length; linha++){
+
+        for(var coluna = 0; coluna<3; coluna++){
+            document.writeln(dados[linha][coluna]+" ")
+
+
+        }
+        document.write("<hr>")
+
+             }
+
+
+    </script>
+</body>
+</html>
